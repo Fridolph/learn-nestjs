@@ -1,0 +1,7 @@
+{
+  "database": {
+    "name": "production",
+    "username": "admin",
+    "password": "admin"
+  }
+}
