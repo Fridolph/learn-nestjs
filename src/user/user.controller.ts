@@ -1,35 +1,59 @@
-import { UserService } from './user.service'
-import { Controller, Get, Post } from '@nestjs/common'
-// import { ConfigService } from '@nestjs/config'
-// import { ConfigEnum } from 'src/enum/config.enum'
-// import * as config from 'config'
+import { UserService } from "./user.service";
+import { Controller, Get, Post, Patch, Delete } from "@nestjs/common";
+import { ConfigService } from "@nestjs/config";
+import { User } from "./user.entity";
 
-
-@Controller('user')
+@Controller("user")
 export class UserController {
-  constructor(private userService: UserService) {
-  // constructor(private userService: UserService, private configService: ConfigService) {
+  constructor(
     // 语法糖 -> 相当与 this.userService = new UserService();
+    private userService: UserService,
+    private configService: ConfigService,
+  ) {
+    //
   }
 
   @Get()
-  getUsers(): any {
-    // 1. 由于 ConfigService 是在 App 设置的，所以这里打印不了会报错，需要返回 app 中设置 isGlobal: true
-    // const db = this.configService.get(ConfigEnum.DB)
-    // const host = this.configService.get(ConfigEnum.DB_HOST)
-    // console.log("🚀 ~ UserController ~ getUsers:", db, host)
-
-    // 2. 通过 configuration 的形式读取    
-    // console.log("🚀 ~ env:", process.env.DB_HOST)
-    console.log("🚀 ~ process.env:\n", process.env)
-
-    // 3. 建议用 config 库，写 json 比较简单能跑通
-
-    return this.userService.getUsers()
+  getUsers() {
+    return this.userService.findAll();
   }
 
   @Post()
-  addUser(): any {
-    return this.userService.addUser()
+  addUser() {
+    // 先模拟插入定死的数据
+    const user = { username: "tomic", password: "666888" } as User;
+    return this.userService.create(user);
+  }
+
+  @Patch()
+  updateUser(id: number) {
+    // todo 传递参数id
+    // todo 异常处理
+    const user = { username: 'newName '} as User
+    return this.userService.update(1, user)
+  }
+
+  @Delete()
+  deleteUser(id: number) {
+    return this.userService.remove(id);
+  }
+
+  @Get('/profile')
+  getUserProfile(id: number) {
+    return this.userService.findProfile(2)
+  }
+
+  @Get('/logs')
+  getUserLogs(id: number) {
+    return this.userService.findUserLogs(2)
+  }
+
+  @Get('/logsByGroup')
+  async getLogsByGroup() {
+    const res = await this.userService.findLogsByGroup(2)
+    return res.map(v => ({
+      result: v.result,
+      count: v.count
+    }))
   }
 }
