@@ -1,25 +1,22 @@
-import { NestFactory } from "@nestjs/core";
-import { AppModule } from "./app.module";
-// import { Logger } from "@nestjs/common";
-// 第三方日志库 winston
-import { WINSTON_MODULE_NEST_PROVIDER } from "nest-winston";
+// Copyright (c) 2022 toimc<admin@wayearn.com>
+//
+// This software is released under the MIT License.
+// https://opensource.org/licenses/MIT
 
-const PREFIX = "api/v1";
-const PORT = 3000;
+// import { Logger } from '@nestjs/common';
+import { NestFactory } from '@nestjs/core';
+import { WINSTON_MODULE_NEST_PROVIDER } from 'nest-winston';
+import { AppModule } from './app.module';
 
-// 写了单独的 logs Module 所以这里的代码可以删掉了
-// 下面关于 日志 Log 的都注释掉了
-// const loggerInstance = WinstonModule.createLogger({
-//   transports: [],
-// })
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
-    // 
+    // 关闭整个nestjs日志
+    // logger: false,
+    // logger: ['error', 'warn'],
   });
-  app.setGlobalPrefix(PREFIX);
-  app.useLogger(app.get(WINSTON_MODULE_NEST_PROVIDER))
-
-  await app.listen(PORT);
+  app.useLogger(app.get(WINSTON_MODULE_NEST_PROVIDER));
+  app.setGlobalPrefix('api/v1');
+  const port = 3000;
+  await app.listen(port);
 }
-
 bootstrap();
