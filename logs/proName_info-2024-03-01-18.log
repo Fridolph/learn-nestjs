@@ -1,0 +1,323 @@
+info: Starting Nest application... {"context":"NestFactory","timestamp":"2024-03-01T10:00:20.307Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:00:20.317Z"}
+info: AppModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:00:20.317Z"}
+info: ConfigHostModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:00:20.318Z"}
+info: WinstonModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:00:20.318Z"}
+info: RangeModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:00:20.318Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:00:20.319Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:00:20.319Z"}
+info: TypeOrmCoreModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:00:20.504Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:00:20.504Z"}
+info: UserController init... {"timestamp":"2024-03-01T10:00:20.505Z"}
+info: UserModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:00:20.506Z"}
+info: UserController {/api/v1/user}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:00:20.521Z"}
+info: Mapped {/api/v1/user, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:00:20.523Z"}
+info: Mapped {/api/v1/user, POST} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:00:20.524Z"}
+info: Mapped {/api/v1/user, PATCH} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:00:20.524Z"}
+info: Mapped {/api/v1/user, DELETE} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:00:20.525Z"}
+info: Mapped {/api/v1/user/profile, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:00:20.525Z"}
+info: Mapped {/api/v1/user/logs, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:00:20.526Z"}
+info: Mapped {/api/v1/user/logsByGroup, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:00:20.526Z"}
+info: RangeController {/api/v1/range}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:00:20.526Z"}
+info: Mapped {/api/v1/range, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:00:20.527Z"}
+info: Mapped {/api/v1/range/:id, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:00:20.528Z"}
+info: Nest application successfully started {"context":"NestApplication","timestamp":"2024-03-01T10:00:20.530Z"}
+info: Starting Nest application... {"context":"NestFactory","timestamp":"2024-03-01T10:01:04.412Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:01:04.423Z"}
+info: AppModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:01:04.423Z"}
+info: ConfigHostModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:01:04.424Z"}
+info: WinstonModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:01:04.424Z"}
+info: RangeModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:01:04.424Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:01:04.425Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:01:04.425Z"}
+info: TypeOrmCoreModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:01:04.612Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:01:04.612Z"}
+info: UserController init... {"timestamp":"2024-03-01T10:01:04.613Z"}
+info: UserModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:01:04.614Z"}
+info: UserController {/api/v1/user}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:01:04.630Z"}
+info: Mapped {/api/v1/user, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:01:04.632Z"}
+info: Mapped {/api/v1/user, POST} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:01:04.632Z"}
+info: Mapped {/api/v1/user, PATCH} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:01:04.633Z"}
+info: Mapped {/api/v1/user, DELETE} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:01:04.633Z"}
+info: Mapped {/api/v1/user/profile, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:01:04.633Z"}
+info: Mapped {/api/v1/user/logs, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:01:04.634Z"}
+info: Mapped {/api/v1/user/logsByGroup, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:01:04.634Z"}
+info: RangeController {/api/v1/range}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:01:04.635Z"}
+info: Mapped {/api/v1/range, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:01:04.635Z"}
+info: Mapped {/api/v1/range/:id, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:01:04.636Z"}
+info: Nest application successfully started {"context":"NestApplication","timestamp":"2024-03-01T10:01:04.638Z"}
+info: Starting Nest application... {"context":"NestFactory","timestamp":"2024-03-01T10:04:29.908Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:04:29.919Z"}
+info: AppModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:04:29.919Z"}
+info: ConfigHostModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:04:29.920Z"}
+info: WinstonModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:04:29.920Z"}
+info: RangeModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:04:29.920Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:04:29.921Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:04:29.921Z"}
+info: TypeOrmCoreModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:04:30.111Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:04:30.112Z"}
+info: UserController init... {"timestamp":"2024-03-01T10:04:30.113Z"}
+info: UserModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:04:30.114Z"}
+info: UserController {/api/v1/user}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:04:30.128Z"}
+info: Mapped {/api/v1/user, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:04:30.130Z"}
+info: Mapped {/api/v1/user, POST} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:04:30.131Z"}
+info: Mapped {/api/v1/user, PATCH} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:04:30.132Z"}
+info: Mapped {/api/v1/user, DELETE} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:04:30.132Z"}
+info: Mapped {/api/v1/user/profile, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:04:30.133Z"}
+info: Mapped {/api/v1/user/logs, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:04:30.133Z"}
+info: Mapped {/api/v1/user/logsByGroup, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:04:30.134Z"}
+info: RangeController {/api/v1/range}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:04:30.134Z"}
+info: Mapped {/api/v1/range, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:04:30.135Z"}
+info: Mapped {/api/v1/range/:id, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:04:30.136Z"}
+info: Nest application successfully started {"context":"NestApplication","timestamp":"2024-03-01T10:04:30.138Z"}
+info: Starting Nest application... {"context":"NestFactory","timestamp":"2024-03-01T10:06:39.358Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:06:39.370Z"}
+info: AppModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:06:39.370Z"}
+info: ConfigHostModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:06:39.371Z"}
+info: WinstonModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:06:39.371Z"}
+info: RangeModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:06:39.371Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:06:39.372Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:06:39.372Z"}
+info: TypeOrmCoreModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:06:39.579Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:06:39.580Z"}
+info: UserController init... {"timestamp":"2024-03-01T10:06:39.581Z"}
+info: UserModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:06:39.582Z"}
+info: UserController {/api/v1/user}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:06:39.607Z"}
+info: Mapped {/api/v1/user, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:06:39.611Z"}
+info: Mapped {/api/v1/user, POST} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:06:39.611Z"}
+info: Mapped {/api/v1/user, PATCH} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:06:39.612Z"}
+info: Mapped {/api/v1/user, DELETE} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:06:39.613Z"}
+info: Mapped {/api/v1/user/profile, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:06:39.614Z"}
+info: Mapped {/api/v1/user/logs, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:06:39.614Z"}
+info: Mapped {/api/v1/user/logsByGroup, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:06:39.615Z"}
+info: RangeController {/api/v1/range}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:06:39.616Z"}
+info: Mapped {/api/v1/range, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:06:39.616Z"}
+info: Mapped {/api/v1/range/:id, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:06:39.618Z"}
+info: Nest application successfully started {"context":"NestApplication","timestamp":"2024-03-01T10:06:39.621Z"}
+info: Starting Nest application... {"context":"NestFactory","timestamp":"2024-03-01T10:06:41.100Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:06:41.111Z"}
+info: AppModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:06:41.111Z"}
+info: ConfigHostModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:06:41.112Z"}
+info: WinstonModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:06:41.112Z"}
+info: RangeModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:06:41.112Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:06:41.113Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:06:41.113Z"}
+info: TypeOrmCoreModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:06:41.298Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:06:41.299Z"}
+info: UserController init... {"timestamp":"2024-03-01T10:06:41.300Z"}
+info: UserModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:06:41.300Z"}
+info: UserController {/api/v1/user}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:06:41.317Z"}
+info: Mapped {/api/v1/user, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:06:41.318Z"}
+info: Mapped {/api/v1/user, POST} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:06:41.319Z"}
+info: Mapped {/api/v1/user, PATCH} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:06:41.320Z"}
+info: Mapped {/api/v1/user, DELETE} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:06:41.320Z"}
+info: Mapped {/api/v1/user/profile, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:06:41.321Z"}
+info: Mapped {/api/v1/user/logs, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:06:41.321Z"}
+info: Mapped {/api/v1/user/logsByGroup, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:06:41.322Z"}
+info: RangeController {/api/v1/range}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:06:41.322Z"}
+info: Mapped {/api/v1/range, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:06:41.322Z"}
+info: Mapped {/api/v1/range/:id, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:06:41.323Z"}
+info: Nest application successfully started {"context":"NestApplication","timestamp":"2024-03-01T10:06:41.325Z"}
+info: Starting Nest application... {"context":"NestFactory","timestamp":"2024-03-01T10:07:13.731Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:07:13.741Z"}
+info: AppModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:07:13.742Z"}
+info: ConfigHostModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:07:13.742Z"}
+info: WinstonModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:07:13.743Z"}
+info: RangeModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:07:13.743Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:07:13.743Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:07:13.744Z"}
+info: TypeOrmCoreModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:07:13.939Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:07:13.940Z"}
+info: UserController init... {"timestamp":"2024-03-01T10:07:13.941Z"}
+info: UserModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:07:13.941Z"}
+info: UserController {/api/v1/user}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:07:13.957Z"}
+info: Mapped {/api/v1/user, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:07:13.959Z"}
+info: Mapped {/api/v1/user, POST} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:07:13.960Z"}
+info: Mapped {/api/v1/user, PATCH} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:07:13.961Z"}
+info: Mapped {/api/v1/user, DELETE} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:07:13.961Z"}
+info: Mapped {/api/v1/user/profile, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:07:13.962Z"}
+info: Mapped {/api/v1/user/logs, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:07:13.962Z"}
+info: Mapped {/api/v1/user/logsByGroup, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:07:13.963Z"}
+info: RangeController {/api/v1/range}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:07:13.963Z"}
+info: Mapped {/api/v1/range, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:07:13.964Z"}
+info: Mapped {/api/v1/range/:id, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:07:13.964Z"}
+info: Nest application successfully started {"context":"NestApplication","timestamp":"2024-03-01T10:07:13.966Z"}
+info: Starting Nest application... {"context":"NestFactory","timestamp":"2024-03-01T10:08:59.727Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:08:59.738Z"}
+info: AppModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:08:59.738Z"}
+info: ConfigHostModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:08:59.738Z"}
+info: WinstonModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:08:59.739Z"}
+info: RangeModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:08:59.739Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:08:59.739Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:08:59.740Z"}
+info: TypeOrmCoreModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:08:59.933Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:08:59.934Z"}
+info: UserController init... {"timestamp":"2024-03-01T10:08:59.935Z"}
+info: UserModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:08:59.935Z"}
+info: UserController {/api/v1/user}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:08:59.951Z"}
+info: Mapped {/api/v1/user, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:08:59.953Z"}
+info: Mapped {/api/v1/user, POST} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:08:59.953Z"}
+info: Mapped {/api/v1/user, PATCH} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:08:59.954Z"}
+info: Mapped {/api/v1/user, DELETE} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:08:59.954Z"}
+info: Mapped {/api/v1/user/profile, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:08:59.955Z"}
+info: Mapped {/api/v1/user/logs, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:08:59.955Z"}
+info: Mapped {/api/v1/user/logsByGroup, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:08:59.956Z"}
+info: RangeController {/api/v1/range}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:08:59.956Z"}
+info: Mapped {/api/v1/range, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:08:59.956Z"}
+info: Mapped {/api/v1/range/:id, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:08:59.957Z"}
+info: Nest application successfully started {"context":"NestApplication","timestamp":"2024-03-01T10:08:59.959Z"}
+info: Starting Nest application... {"context":"NestFactory","timestamp":"2024-03-01T10:11:21.307Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:11:21.318Z"}
+info: AppModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:11:21.318Z"}
+info: ConfigHostModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:11:21.319Z"}
+info: WinstonModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:11:21.319Z"}
+info: RangeModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:11:21.319Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:11:21.320Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:11:21.320Z"}
+info: TypeOrmCoreModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:11:21.509Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:11:21.510Z"}
+info: UserController init... {"timestamp":"2024-03-01T10:11:21.510Z"}
+info: UserModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:11:21.511Z"}
+info: UserController {/api/v1/user}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:11:21.527Z"}
+info: Mapped {/api/v1/user, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:11:21.529Z"}
+info: Mapped {/api/v1/user, POST} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:11:21.530Z"}
+info: Mapped {/api/v1/user, PATCH} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:11:21.530Z"}
+info: Mapped {/api/v1/user, DELETE} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:11:21.531Z"}
+info: Mapped {/api/v1/user/profile, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:11:21.531Z"}
+info: Mapped {/api/v1/user/logs, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:11:21.532Z"}
+info: Mapped {/api/v1/user/logsByGroup, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:11:21.532Z"}
+info: RangeController {/api/v1/range}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:11:21.533Z"}
+info: Mapped {/api/v1/range, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:11:21.533Z"}
+info: Mapped {/api/v1/range/:id, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:11:21.534Z"}
+info: Nest application successfully started {"context":"NestApplication","timestamp":"2024-03-01T10:11:21.536Z"}
+info: Starting Nest application... {"context":"NestFactory","timestamp":"2024-03-01T10:12:44.068Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:12:44.079Z"}
+info: AppModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:12:44.080Z"}
+info: ConfigHostModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:12:44.081Z"}
+info: WinstonModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:12:44.081Z"}
+info: RangeModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:12:44.081Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:12:44.082Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:12:44.082Z"}
+info: TypeOrmCoreModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:12:44.281Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:12:44.282Z"}
+info: UserController init... {"timestamp":"2024-03-01T10:12:44.283Z"}
+info: UserModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:12:44.283Z"}
+info: UserController {/api/v1/user}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:12:44.301Z"}
+info: Mapped {/api/v1/user, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:12:44.304Z"}
+info: Mapped {/api/v1/user, POST} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:12:44.305Z"}
+info: Mapped {/api/v1/user, PATCH} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:12:44.306Z"}
+info: Mapped {/api/v1/user, DELETE} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:12:44.306Z"}
+info: Mapped {/api/v1/user/profile, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:12:44.307Z"}
+info: Mapped {/api/v1/user/logs, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:12:44.308Z"}
+info: Mapped {/api/v1/user/logsByGroup, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:12:44.308Z"}
+info: RangeController {/api/v1/range}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:12:44.309Z"}
+info: Mapped {/api/v1/range, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:12:44.309Z"}
+info: Mapped {/api/v1/range/:id, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:12:44.310Z"}
+info: Nest application successfully started {"context":"NestApplication","timestamp":"2024-03-01T10:12:44.312Z"}
+info: Starting Nest application... {"context":"NestFactory","timestamp":"2024-03-01T10:15:48.752Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:15:48.763Z"}
+info: AppModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:15:48.764Z"}
+info: ConfigHostModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:15:48.764Z"}
+info: WinstonModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:15:48.765Z"}
+info: RangeModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:15:48.765Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:15:48.765Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:15:48.765Z"}
+info: TypeOrmCoreModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:15:48.956Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:15:48.957Z"}
+info: UserController init... {"timestamp":"2024-03-01T10:15:48.958Z"}
+info: UserModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:15:48.958Z"}
+info: UserController {/api/v1/user}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:15:48.975Z"}
+info: Mapped {/api/v1/user, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:15:48.977Z"}
+info: Mapped {/api/v1/user, POST} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:15:48.978Z"}
+info: Mapped {/api/v1/user, PATCH} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:15:48.978Z"}
+info: Mapped {/api/v1/user, DELETE} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:15:48.979Z"}
+info: Mapped {/api/v1/user/profile, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:15:48.979Z"}
+info: Mapped {/api/v1/user/logs, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:15:48.980Z"}
+info: Mapped {/api/v1/user/logsByGroup, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:15:48.980Z"}
+info: RangeController {/api/v1/range}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:15:48.981Z"}
+info: Mapped {/api/v1/range, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:15:48.981Z"}
+info: Mapped {/api/v1/range/:id, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:15:48.982Z"}
+info: Nest application successfully started {"context":"NestApplication","timestamp":"2024-03-01T10:15:48.984Z"}
+info: Starting Nest application... {"context":"NestFactory","timestamp":"2024-03-01T10:16:16.394Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:16:16.405Z"}
+info: AppModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:16:16.406Z"}
+info: ConfigHostModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:16:16.406Z"}
+info: WinstonModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:16:16.407Z"}
+info: RangeModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:16:16.407Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:16:16.407Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:16:16.408Z"}
+info: Starting Nest application... {"context":"NestFactory","timestamp":"2024-03-01T10:16:18.821Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:16:18.832Z"}
+info: AppModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:16:18.832Z"}
+info: ConfigHostModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:16:18.833Z"}
+info: WinstonModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:16:18.833Z"}
+info: RangeModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:16:18.833Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:16:18.834Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:16:18.834Z"}
+info: TypeOrmCoreModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:16:19.019Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:16:19.020Z"}
+info: UserController init... {"timestamp":"2024-03-01T10:16:19.021Z"}
+info: UserModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:16:19.021Z"}
+info: UserController {/api/v1/user}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:16:19.046Z"}
+info: Mapped {/api/v1/user, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:16:19.048Z"}
+info: Mapped {/api/v1/user, POST} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:16:19.049Z"}
+info: Mapped {/api/v1/user, PATCH} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:16:19.049Z"}
+info: Mapped {/api/v1/user, DELETE} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:16:19.050Z"}
+info: Mapped {/api/v1/user/profile, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:16:19.051Z"}
+info: Mapped {/api/v1/user/logs, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:16:19.051Z"}
+info: Mapped {/api/v1/user/logsByGroup, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:16:19.052Z"}
+info: RangeController {/api/v1/range}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:16:19.052Z"}
+info: Mapped {/api/v1/range, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:16:19.053Z"}
+info: Mapped {/api/v1/range/:id, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:16:19.054Z"}
+info: Nest application successfully started {"context":"NestApplication","timestamp":"2024-03-01T10:16:19.056Z"}
+info: Starting Nest application... {"context":"NestFactory","timestamp":"2024-03-01T10:22:35.304Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:22:35.314Z"}
+info: AppModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:22:35.315Z"}
+info: ConfigHostModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:22:35.315Z"}
+info: WinstonModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:22:35.316Z"}
+info: RangeModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:22:35.316Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:22:35.316Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:22:35.317Z"}
+info: TypeOrmCoreModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:22:35.525Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:22:35.525Z"}
+info: UserController init... {"timestamp":"2024-03-01T10:22:35.526Z"}
+info: UserModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:22:35.527Z"}
+info: UserController {/api/v1/user}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:22:35.543Z"}
+info: Mapped {/api/v1/user, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:22:35.545Z"}
+info: Mapped {/api/v1/user, POST} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:22:35.546Z"}
+info: Mapped {/api/v1/user, PATCH} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:22:35.547Z"}
+info: Mapped {/api/v1/user, DELETE} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:22:35.547Z"}
+info: Mapped {/api/v1/user/profile, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:22:35.548Z"}
+info: Mapped {/api/v1/user/logs, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:22:35.548Z"}
+info: Mapped {/api/v1/user/logsByGroup, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:22:35.549Z"}
+info: RangeController {/api/v1/range}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:22:35.549Z"}
+info: Mapped {/api/v1/range, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:22:35.550Z"}
+info: Mapped {/api/v1/range/:id, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:22:35.551Z"}
+info: Nest application successfully started {"context":"NestApplication","timestamp":"2024-03-01T10:22:35.553Z"}
+error: Cannot GET /api/v1/user/asdfsdfs {"stack":["NotFoundException: Cannot GET /api/v1/user/asdfsdfs\n    at callback (D:\\github\\learn-nestjs\\node_modules\\.pnpm\\@nestjs+core@10.3.3_@nestjs+common@10.3.3_@nestjs+platform-express@10.3.3_reflect-metadata@0.2.1_rxjs@7.8.1\\node_modules\\@nestjs\\core\\router\\routes-resolver.js:77:19)\n    at D:\\github\\learn-nestjs\\node_modules\\.pnpm\\@nestjs+core@10.3.3_@nestjs+common@10.3.3_@nestjs+platform-express@10.3.3_reflect-metadata@0.2.1_rxjs@7.8.1\\node_modules\\@nestjs\\core\\router\\router-proxy.js:9:23\n    at Layer.handle [as handle_request] (D:\\github\\learn-nestjs\\node_modules\\.pnpm\\express@4.18.2\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\github\\learn-nestjs\\node_modules\\.pnpm\\express@4.18.2\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\github\\learn-nestjs\\node_modules\\.pnpm\\express@4.18.2\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\github\\learn-nestjs\\node_modules\\.pnpm\\express@4.18.2\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\github\\learn-nestjs\\node_modules\\.pnpm\\express@4.18.2\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at urlencodedParser (D:\\github\\learn-nestjs\\node_modules\\.pnpm\\body-parser@1.20.2\\node_modules\\body-parser\\lib\\types\\urlencoded.js:91:7)\n    at Layer.handle [as handle_request] (D:\\github\\learn-nestjs\\node_modules\\.pnpm\\express@4.18.2\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\github\\learn-nestjs\\node_modules\\.pnpm\\express@4.18.2\\node_modules\\express\\lib\\router\\index.js:328:13)"],"timestamp":"2024-03-01T10:22:51.537Z"}
+error: Cannot GET /api/v1/user/ggggggggggggggggggggg {"stack":["NotFoundException: Cannot GET /api/v1/user/ggggggggggggggggggggg\n    at callback (D:\\github\\learn-nestjs\\node_modules\\.pnpm\\@nestjs+core@10.3.3_@nestjs+common@10.3.3_@nestjs+platform-express@10.3.3_reflect-metadata@0.2.1_rxjs@7.8.1\\node_modules\\@nestjs\\core\\router\\routes-resolver.js:77:19)\n    at D:\\github\\learn-nestjs\\node_modules\\.pnpm\\@nestjs+core@10.3.3_@nestjs+common@10.3.3_@nestjs+platform-express@10.3.3_reflect-metadata@0.2.1_rxjs@7.8.1\\node_modules\\@nestjs\\core\\router\\router-proxy.js:9:23\n    at Layer.handle [as handle_request] (D:\\github\\learn-nestjs\\node_modules\\.pnpm\\express@4.18.2\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\github\\learn-nestjs\\node_modules\\.pnpm\\express@4.18.2\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\github\\learn-nestjs\\node_modules\\.pnpm\\express@4.18.2\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\github\\learn-nestjs\\node_modules\\.pnpm\\express@4.18.2\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\github\\learn-nestjs\\node_modules\\.pnpm\\express@4.18.2\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at urlencodedParser (D:\\github\\learn-nestjs\\node_modules\\.pnpm\\body-parser@1.20.2\\node_modules\\body-parser\\lib\\types\\urlencoded.js:91:7)\n    at Layer.handle [as handle_request] (D:\\github\\learn-nestjs\\node_modules\\.pnpm\\express@4.18.2\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\github\\learn-nestjs\\node_modules\\.pnpm\\express@4.18.2\\node_modules\\express\\lib\\router\\index.js:328:13)"],"timestamp":"2024-03-01T10:25:36.275Z"}
+info: Starting Nest application... {"context":"NestFactory","timestamp":"2024-03-01T10:29:21.376Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:29:21.386Z"}
+info: LogsModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:29:21.387Z"}
+info: ConfigHostModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:29:21.387Z"}
+info: WinstonModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:29:21.388Z"}
+info: AppModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:29:21.388Z"}
+info: RangeModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:29:21.388Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:29:21.388Z"}
+info: ConfigModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:29:21.389Z"}
+info: TypeOrmCoreModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:29:21.575Z"}
+info: TypeOrmModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:29:21.575Z"}
+info: UserController init... {"timestamp":"2024-03-01T10:29:21.576Z"}
+info: UserModule dependencies initialized {"context":"InstanceLoader","timestamp":"2024-03-01T10:29:21.576Z"}
+info: UserController {/api/v1/user}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:29:21.592Z"}
+info: Mapped {/api/v1/user, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:29:21.594Z"}
+info: Mapped {/api/v1/user, POST} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:29:21.595Z"}
+info: Mapped {/api/v1/user, PATCH} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:29:21.596Z"}
+info: Mapped {/api/v1/user, DELETE} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:29:21.596Z"}
+info: Mapped {/api/v1/user/profile, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:29:21.597Z"}
+info: Mapped {/api/v1/user/logs, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:29:21.597Z"}
+info: Mapped {/api/v1/user/logsByGroup, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:29:21.598Z"}
+info: RangeController {/api/v1/range}: {"context":"RoutesResolver","timestamp":"2024-03-01T10:29:21.598Z"}
+info: Mapped {/api/v1/range, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:29:21.598Z"}
+info: Mapped {/api/v1/range/:id, GET} route {"context":"RouterExplorer","timestamp":"2024-03-01T10:29:21.599Z"}
+info: Nest application successfully started {"context":"NestApplication","timestamp":"2024-03-01T10:29:21.601Z"}
