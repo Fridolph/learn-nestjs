@@ -1,11 +1,11 @@
 import { UserService } from "./user.service";
-import { Controller, Get, Post, Patch, Delete, Logger, HttpException, HttpStatus, LoggerService, Inject } from "@nestjs/common";
+import { Controller, Get, Post, Patch, Delete } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
 import { User } from "./user.entity";
-import { WINSTON_MODULE_NEST_PROVIDER } from "nest-winston";
+
 // 加入日志模块
 // import { Logger } from "@nestjs/common";
-// import { Logger } from "nestjs-pino";
+import { Logger } from "nestjs-pino";
 
 @Controller("user")
 export class UserController {
@@ -16,10 +16,7 @@ export class UserController {
     private userService: UserService,
     private configService: ConfigService,
     // 第三方 nestjs-pino
-    // private logger: Logger
-    // 第三方 winston
-    @Inject(WINSTON_MODULE_NEST_PROVIDER)
-    private readonly logger: LoggerService
+    private logger: Logger
   ) {
     //
     this.logger.log(`UserController init...`)
@@ -27,17 +24,7 @@ export class UserController {
 
   @Get()
   getUsers() {
-    // mock数据
-    const user = { isAdmin: false }
-
-    if (!user.isAdmin) {
-      throw new HttpException('账号不是管理员，没有权限访问', HttpStatus.FORBIDDEN)
-    }
-    this.logger.log(`请求getUsers成功`)
-    // this.logger.warn(`请求getUsers成功`) // 告警样式，这里请求成功了
-    // this.logger.error(`请求getUsers成功`) 失败样式 - 这里请求成功了 所以stack 为null
-    // this.logger.debug(`请求getUsers成功`) 没有东西打印
-    // this.logger.verbose(`请求getUsers成功`) 没有东西打印
+    // this.logger.log(`请求getUsers成功`)
     return this.userService.findAll();
   }
 

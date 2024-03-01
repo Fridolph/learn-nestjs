@@ -1,20 +1,30 @@
-import { Module } from "@nestjs/common";
+// import { Module } from "@nestjs/common";
 import { ConfigModule, ConfigService } from "@nestjs/config";
 import { UserModule } from "./user/user.module";
 import { RangeModule } from "./range/range.module";
 import * as Joi from "joi";
 import { TypeOrmModule, TypeOrmModuleOptions } from "@nestjs/typeorm";
 
-// 通过使用哦 dotenv 来也很好用，可直接读取
+// 通过使用 dotenv 来也很好用，可直接读取
 import * as dotenv from "dotenv";
 import { ConfigEnum } from "./enum/config.enum";
 
+// 第三方日志模块 pino
+// import { LoggerModule } from "nestjs-pino";
+// import { join } from "path";
+
+// 第三方日志模块 winston
+import { Module, Global, Logger } from "@nestjs/common";
+import { WinstonModule } from "nest-winston";
+import { LogsModule } from './logs/logs.module';
+import * as winston from "winston";
+
 const envFilePath = `.env.${process.env.NODE_ENV || "development"}`;
 
+// 把日志进行全局注册这样所有模块都能使用了
+@Global()
 @Module({
-  imports: [
-    UserModule,
-    RangeModule,
+  imports: [    
     // env相关配置
     ConfigModule.forRoot({
       isGlobal: true,
@@ -26,7 +36,7 @@ const envFilePath = `.env.${process.env.NODE_ENV || "development"}`;
           .default("development"),
         DB_PORT: Joi.number().valid(3306),
         DB_HOST: Joi.string().ip(),
-        DB_TYPE: Joi.string().valid('mysql', 'postgres'),
+        DB_TYPE: Joi.string().valid("mysql", "postgres"),
         DB_DATABASE: Joi.string().required(),
         DB_USERNAME: Joi.string().required(),
         DB_PASSWORD: Joi.string().required(),
@@ -39,38 +49,29 @@ const envFilePath = `.env.${process.env.NODE_ENV || "development"}`;
     TypeOrmModule.forRootAsync({
       imports: [ConfigModule],
       inject: [ConfigService],
-      useFactory: (configService: ConfigService) => ({
-        type: configService.get(ConfigEnum.DB_TYPE),
-        host: configService.get(ConfigEnum.DB_HOST),
-        port: configService.get(ConfigEnum.DB_PORT),
-        username: configService.get(ConfigEnum.DB_USERNAME),
-        password: configService.get(ConfigEnum.DB_PASSWORD),
-        database: configService.get(ConfigEnum.DB_DATABASE),
-        entities: [__dirname + "/**/*.entity{.ts,.js}"],
-        // 同步本地的schema与数据库 -> 初始化时使用
-        synchronize: configService.get(ConfigEnum.DB_SYNC),
-        // 设置日志等级
-        // logging: ["error"],
-        logging: process.env.NODE_ENV === 'development' ? true : false,
-      }) as TypeOrmModuleOptions,
+      useFactory: (configService: ConfigService) =>
+        ({
+          type: configService.get(ConfigEnum.DB_TYPE),
+          host: configService.get(ConfigEnum.DB_HOST),
+          port: configService.get(ConfigEnum.DB_PORT),
+          username: configService.get(ConfigEnum.DB_USERNAME),
+          password: configService.get(ConfigEnum.DB_PASSWORD),
+          database: configService.get(ConfigEnum.DB_DATABASE),
+          entities: [__dirname + "/**/*.entity{.ts,.js}"],
+          // 同步本地的schema与数据库 -> 初始化时使用
+          synchronize: configService.get(ConfigEnum.DB_SYNC),
+          // 设置日志等级
+          // logging: ["error"],
+          logging: process.env.NODE_ENV === "development" ? true : false,
+        }) as TypeOrmModuleOptions,
     }),
-
-    // 数据库相关配置 - 现在用 forRootAsync 方法来配置
-    // TypeOrmModule.forRoot({
-    //   type: "mysql",
-    //   host: "localhost",
-    //   port: 3306,
-    //   username: "root",
-    //   password: "123123",
-    //   database: "learn_nestjs",
-    //   entities: [__dirname + "/**/*.entity{.ts,.js}"],
-    //   // 同步本地的schema与数据库 -> 初始化时使用
-    //   synchronize: true,
-    //   // 设置日志等级
-    //   logging: ["error"],
-    // }),
+    
+    LogsModule,
+    UserModule,
+    RangeModule,
   ],
   controllers: [],
-  providers: [],
+  providers: [Logger],
+  exports: [Logger],
 })
 export class AppModule {}

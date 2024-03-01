@@ -1,0 +1,1 @@
+<https://github.com/pinojs/pino/blob/HEAD/docs/web.md#pino-with-nest>
