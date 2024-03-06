@@ -1,18 +1,45 @@
-import { Injectable } from '@nestjs/common';
-import { InjectRepository } from '@nestjs/typeorm';
-import { Repository } from 'typeorm';
-import { User } from './user.entity';
-import { Logs } from '../logs/logs.entity';
+import { Injectable } from "@nestjs/common";
+import { InjectRepository } from "@nestjs/typeorm";
+import { Repository } from "typeorm";
+import { User } from "./user.entity";
+import { Logs } from "../logs/logs.entity";
+import { getUsersDto } from "./dto/getUser.dto";
 
 @Injectable()
 export class UserService {
   constructor(
     @InjectRepository(User) private readonly userRepository: Repository<User>,
-    @InjectRepository(Logs) private readonly logsRepository: Repository<Logs>,
+    @InjectRepository(Logs) private readonly logsRepository: Repository<Logs>
   ) {}
 
-  findAll() {
-    return this.userRepository.find();
+  findAll(query: getUsersDto) {
+    const { limit, page, username, role, gender } = query;
+    const take = limit || 10;
+    const skip = ((page || 1) - 1) * take
+    return this.userRepository.find({
+      select: {
+        id: true,
+        username: true,
+        profile: {
+          gender: true
+        }
+      },
+      relations: {
+        profile: true,
+        roles: true,
+      },
+      take,
+      skip,
+      where: {
+        username,
+        profile: {
+          gender
+        },
+        roles: {
+          id: role
+        }
+      }
+    });
   }
 
   find(username: string) {
@@ -66,14 +93,14 @@ export class UserService {
     // );
     return (
       this.logsRepository
-        .createQueryBuilder('logs')
-        .select('logs.result', 'result')
-        .addSelect('COUNT("logs.result")', 'count')
-        .leftJoinAndSelect('logs.user', 'user')
-        .where('user.id = :id', { id })
-        .groupBy('logs.result')
-        .orderBy('count', 'DESC')
-        .addOrderBy('result', 'DESC')
+        .createQueryBuilder("logs")
+        .select("logs.result", "result")
+        .addSelect('COUNT("logs.result")', "count")
+        .leftJoinAndSelect("logs.user", "user")
+        .where("user.id = :id", { id })
+        .groupBy("logs.result")
+        .orderBy("count", "DESC")
+        .addOrderBy("result", "DESC")
         .offset(2)
         .limit(3)
         // .orderBy('result', 'DESC')
