@@ -1,9 +1,10 @@
-import { Injectable } from "@nestjs/common";
+import { HttpException, Injectable } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
 import { User } from "./user.entity";
 import { Logs } from "../logs/logs.entity";
 import { getUsersDto } from "./dto/getUser.dto";
+import { conditionUtils } from "src/utils/db.helper";
 
 @Injectable()
 export class UserService {
@@ -16,30 +17,48 @@ export class UserService {
     const { limit, page, username, role, gender } = query;
     const take = limit || 10;
     const skip = ((page || 1) - 1) * take
-    return this.userRepository.find({
-      select: {
-        id: true,
-        username: true,
-        profile: {
-          gender: true
-        }
-      },
-      relations: {
-        profile: true,
-        roles: true,
-      },
-      take,
-      skip,
-      where: {
-        username,
-        profile: {
-          gender
-        },
-        roles: {
-          id: role
-        }
-      }
-    });
+    // return this.userRepository.find({
+    //   select: {
+    //     id: true,
+    //     username: true,
+    //     profile: {
+    //       gender: true
+    //     }
+
+    //   },
+    //   relations: {
+    //     profile: true,
+    //     roles: true,
+    //   },
+    //   take,
+    //   skip,
+    //   where: {
+    //     username,
+    //     profile: {
+    //       gender
+    //     },
+    //     roles: {
+    //       id: role
+    //     }
+    //   }
+    // });
+
+    // 尝试另一种查询方式 createQueryBuilder
+    let obj = {
+      'user.username': username,
+      'profile.gender': gender,
+      'roles.id': role
+    }
+    const queryBuilder = this.userRepository
+      .createQueryBuilder('user')
+      .leftJoinAndSelect('user.profile', 'profile')
+      .leftJoinAndSelect('user.roles', 'roles')
+    
+    const newQuery = conditionUtils<User>(queryBuilder, obj)
+    return newQuery
+      .take(take)
+      .skip(skip)
+      .getMany()
   }
 
   find(username: string) {
@@ -50,9 +69,25 @@ export class UserService {
     return this.userRepository.findOne({ where: { id } });
   }
 
+  // 这里的try catch 是一种通用写法
+  // 但每个都这样写太多也太麻烦了
+  // async create(user: User) {
+  //   const userTmp = await this.userRepository.create(user);
+  //   try {
+  //     const res = await this.userRepository.save(userTmp);
+  //     return res      
+  //   } catch (error) {
+  //     console.log("🚀 ~ UserService ~ create ~ error:", error)
+  //     if (error && error.errno === 1062) {
+  //       throw new HttpException(error.sqlMessage, 500);
+  //     }
+  //   }
+  // }
+
   async create(user: User) {
     const userTmp = await this.userRepository.create(user);
-    return this.userRepository.save(userTmp);
+    const res = await this.userRepository.save(userTmp);
+    return res
   }
 
   async update(id: number, user: Partial<User>) {
