@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="complianceEntrance" width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>合规中心</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1440" height="64"></rect>
+        <filter x="-0.9%" y="-17.2%" width="101.8%" height="140.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.26 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="11.71875%" y1="0%" x2="88.28125%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#36A2F9" offset="0%"></stop>
+            <stop stop-color="#1969F1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="SaaSv1.7.100合规中心" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.01合规中心入口（新）" transform="translate(-959.000000, -24.000000)">
+            <rect fill="#F0F2F5" x="0" y="0" width="1440" height="848"></rect>
+            <g id="编组-5">
+                <g id="矩形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="编组-4" transform="translate(947.000000, 16.000000)">
+                    <rect id="矩形" fill="#E6F3FF" x="0" y="0" width="135" height="32" rx="16"></rect>
+                    <g id="编组-19" transform="translate(12.000000, 8.000000)">
+                        <rect id="矩形" fill="#FFFFFF" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                        <g id="编组" transform="translate(1.000000, 0.000000)" fill="url(#linearGradient-3)" fill-rule="nonzero">
+                            <path d="M6.98444444,0 C10.3631111,1.108 13.5488889,1.6624 13.5815556,1.628 C13.8071111,1.6624 14,1.94 14,2.1816 L14,8.3816 C14,8.4504 13.9354444,9.8008 13.0666667,11.3936 C12.5844444,12.3296 11.5538889,13.16 10.7488889,13.8872 C9.75177778,14.788 8.561,15.4808 7.14466667,15.9656 L7.01633333,16 L6.88722222,15.9656 C5.47166667,15.4808 4.24822222,14.788 3.25033333,13.8872 C2.44611111,13.16 1.41633333,12.3288 0.933333333,11.3936 C0.0964444444,9.8352 2.76322175e-16,8.4848 2.76322175e-16,8.416 L2.76322175e-16,2.2168 C2.76322175e-16,1.9392 0.192888889,1.6968 0.418444444,1.6624 C0.418444444,1.6624 4.08722222,1.108 6.98366667,0 L6.98444444,0 Z M6.63677778,3.948 C6.25566667,3.948 5.83955556,4.236 5.73533333,4.6336 L4.66122222,7.952 C4.557,8.3496 4.76544444,8.6376 5.14655556,8.6376 L6.35988889,8.6376 L5.66611111,11.632 C5.56188889,12.0288 5.70111111,12.0648 5.94377778,11.776 L9.20111111,7.808 C9.68644444,7.2312 9.478,6.7256 8.71577778,6.7256 L7.22555556,6.7256 L8.092,4.5976 C8.23044444,4.2368 8.05777778,3.948 7.67588889,3.948 L6.63677778,3.948 Z" id="形状"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

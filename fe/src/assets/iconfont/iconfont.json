@@ -1,0 +1,51 @@
+{
+  "id": "4451652",
+  "name": "learn_nestjs",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "693031",
+      "name": "菜单",
+      "font_class": "menu",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "7712214",
+      "name": "权限",
+      "font_class": "quanxian",
+      "unicode": "e725",
+      "unicode_decimal": 59173
+    },
+    {
+      "icon_id": "8327184",
+      "name": "user",
+      "font_class": "user",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "28354669",
+      "name": "tailwindcss-mark",
+      "font_class": "tailwindcss-mark",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "36671243",
+      "name": "job-roles",
+      "font_class": "job-roles",
+      "unicode": "e6b1",
+      "unicode_decimal": 59057
+    },
+    {
+      "icon_id": "14660285",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    }
+  ]
+}

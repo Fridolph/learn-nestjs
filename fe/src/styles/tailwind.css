@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 覆盖原有的标签样式 */
+@layer components {
+  input {
+    @apply h-10 ring-1 ring-gray-200 px-3 outline-1 rounded focus:outline-[1px] focus:outline-slate-200;
+  }
+}
+
+/* 添加自定义样式 */
+@layer components {  
+  /* .primary {
+    @apply text-[var(--text-hover)] border-[var(--text-hover)] hover:bg-[var(--text-hover)];
+  } */
+
+  .invalid {
+    @apply ring-1 ring-rose-700 focus:outline-none !important;
+  }
+}

@@ -9,6 +9,8 @@ import {
   Query,
   Body,
   Param,
+  Headers,
+  Req
 } from "@nestjs/common";
 import { UserService } from "./user.service";
 import { ConfigService } from "@nestjs/config";
@@ -46,43 +48,36 @@ export class UserController {
   }
 
   // 新增用户
+  // @Post()
+  // addUser(@Body() dto: any): any {
+  //   console.log("🚀 ~ UserController ~ addUser ~ dto:", dto);
+  //   // const user = { username: 'toimc', password: '123456' } as User;
+
+  //   // return this.userService.create(dto);
+  // }
+
   @Post()
-  addUser(@Body() dto: any): any {
-    console.log("🚀 ~ UserController ~ addUser ~ dto:", dto);
+  addUser(@Query() query: any, @Headers() headers: any, @Body() body: any): any {
+    // console.log("🚀 request:", req)
+    console.log("🚀 headers:", headers)
+    console.log("🚀 query:", query)
+    console.log("🚀 body:", body);
     // const user = { username: 'toimc', password: '123456' } as User;
-    
-    return this.userService.create(dto);
-  }
 
-  // 查询单个用户
-  @Get(":id")
-  getUser() {
-    return "hello world :id";
-  }
-
-  // 更新单个用户信息
-  @Patch("/:id/:username")
-  updateUser(
-    @Body() dto: any, 
-    @Param('id') id: number,
-    @Param('username') username: string
-  ): any {
-    console.log(`🚀 Patch("/:id/:username")`, dto, id, username)
-    
-    // return this.userService.update(1, user);
-  }
-
-  // 删除用户
-  @Delete("/:id")
-  deleteUser(@Param('id') id: number): any {
-    // console.log("🚀 ~ deleteUser:", id)
-    return this.userService.remove(id);
+    // return this.userService.create(dto);
   }
 
   // 查询用户详情
   @Get("/profile")
-  getUserProfile(): any {
+  getUserProfile(@Query() query: any) {
+    console.log("🚀 ~ UserController ~ getUserProfile ~ query:", query)
     return this.userService.findProfile(2);
+  }
+
+  // 查询单个用户详情
+  @Get("/profile/:id")
+  getUserProfileById(@Param("id") id: number): any {
+    return this.userService.findProfile(id);
   }
 
   // 获取某个用户操作日志
@@ -99,5 +94,34 @@ export class UserController {
     //   count: o.count,
     // }));
     return res;
+  }
+
+  // 查询单个用户
+  @Get("/:id")
+  getUser(@Param("id") id: number) {
+    console.log("🚀 getUser:", id)
+    return `hello world ${id}`;
+  }
+
+  // 删除用户
+  @Delete("/:id")
+  deleteUser(@Param("id") id: number): any {
+    // console.log("🚀 ~ deleteUser:", id)
+    return this.userService.remove(id);
+  }
+
+
+  @Patch("/:id/:username")
+  updateUserFromUsername(
+    @Body() dto: any,
+    @Param("id") id: number,
+    @Param("username") username: string
+    ): any {
+    console.log("🚀 ~ UserController ~ dto:", dto)
+    console.log("🚀 ~ UserController ~ id:", id)
+    console.log("🚀 ~ UserController ~ username:", username)
+
+    // return this.userService.update(id, user)
+    // return this.userService.update(1, user);
   }
 }

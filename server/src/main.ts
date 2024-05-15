@@ -25,7 +25,7 @@ async function bootstrap() {
   const logger = new Logger()
   app.useGlobalFilters(new AllExceptionFilter(logger, httpAdapter));
 
-  const port = 3000;
+  const port = 9002;
   await app.listen(port);
 }
 bootstrap();
